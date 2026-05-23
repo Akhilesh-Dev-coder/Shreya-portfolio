@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Manrope:wght@300;400;500;600;700&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary-cream: #FAF8F5; /* Warm, spacious editorial cream canvas */
+  --color-primary-white: #FFFFFF; /* Pure clean backing */
+  
+  --color-accent-navy: #0F1E36; /* Deep, dark luxury Navy Blue */
+  --color-accent-gold: #C6A664; /* Sophisticated champagne gold */
+  
+  --color-text-charcoal: #111111; /* Deep charcoal for absolute readability */
+  --color-text-slate: #475569; /* Soft grey-blue for descriptions */
+  --color-text-muted: #94A3B8; /* Muted label slate */
+  
+  --color-border-line: rgba(15, 30, 54, 0.08); /* Delicate navy-cream dividers */
+  --color-border-accent: rgba(198, 166, 100, 0.25); /* Elegant gold lines */
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Manrope", "Inter", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #FAF8F5;
+    color: #111111;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    background-color: #FAF8F5;
+  }
+
+  /* Core Typographic Grid Defaults */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    color: #111111;
+    letter-spacing: -0.01em;
+  }
+
+  /* Custom high-end scrollbar using champagne gold */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #FAF8F5;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #C6A664;
+    border-radius: 3px;
+  }
+}
+
+/* Beautiful micro-animations */
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-slow {
+  display: flex;
+  width: max-content;
+  animation: ticker 45s linear infinite;
+}
+
+.animate-marquee-slow:hover {
+  animation-play-state: paused;
+}
+
+/* Elegant fade-up reveal */
+.animate-fade-up {
+  animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
