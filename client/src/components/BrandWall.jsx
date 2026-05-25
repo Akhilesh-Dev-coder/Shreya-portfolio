@@ -38,7 +38,7 @@ export default function BrandWall() {
       svg: (
         <svg viewBox="0 0 200 60" fill="currentColor" className="w-full h-9">
           <text x="20" y="38" fontFamily="var(--font-serif)" fontSize="26" fontWeight="bold" letterSpacing="4">SONATA</text>
-          <line x1="20" y1="44" x2="135" y2="44" stroke="#0F1E36" strokeWidth="2" />
+          <line x1="20" y1="44" x2="135" y2="44" stroke="#1B2A3A" strokeWidth="2" />
         </svg>
       ),
     },
@@ -76,7 +76,7 @@ export default function BrandWall() {
       svg: (
         <svg viewBox="0 0 200 60" fill="currentColor" className="w-full h-9">
           <path d="M10 42 L25 18 L40 42 Z" stroke="currentColor" strokeWidth="2" fill="none" />
-          <line x1="16" y1="34" x2="34" y2="34" stroke="#0F1E36" strokeWidth="1.5" />
+          <line x1="16" y1="34" x2="34" y2="34" stroke="#1B2A3A" strokeWidth="1.5" />
           <text x="50" y="36" fontFamily="var(--font-sans)" fontSize="16" fontWeight="bold" letterSpacing="3">ALCOVE</text>
           <text x="50" y="46" fontFamily="var(--font-sans)" fontSize="8" fontWeight="bold" letterSpacing="4">REALTY</text>
         </svg>
@@ -95,18 +95,18 @@ export default function BrandWall() {
   ];
 
   return (
-    <section className="py-12 bg-[#FFFFFF] border-y border-[#0F1E36]/10 relative overflow-hidden">
+    <section className="py-12 bg-[#FFFFFC] border-y border-[#1B2A3A]/10 relative overflow-hidden">
       <div className="w-full relative overflow-hidden flex items-center">
         {/* Soft Shadow Overlays */}
-        <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#FFFFFF] to-transparent z-10 pointer-events-none"></div>
-        <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#FFFFFF] to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#FFFFFC] to-transparent z-10 pointer-events-none"></div>
+        <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#FFFFFC] to-transparent z-10 pointer-events-none"></div>
         
         {/* Infinite Loop Ticker */}
         <div className="animate-marquee-slow flex gap-16 items-center">
           {brands.map((brand, idx) => (
             <div
               key={`ticker-1-${idx}`}
-              className="w-[140px] flex-shrink-0 flex items-center justify-center text-[#475569]/40 hover:text-[#0F1E36] hover:opacity-100 transition-all duration-300"
+              className="w-[140px] flex-shrink-0 flex items-center justify-center text-[#475569]/40 hover:text-[#1B2A3A] hover:opacity-100 transition-all duration-300"
               title={brand.name}
             >
               {brand.svg}
@@ -116,7 +116,7 @@ export default function BrandWall() {
           {brands.map((brand, idx) => (
             <div
               key={`ticker-2-${idx}`}
-              className="w-[140px] flex-shrink-0 flex items-center justify-center text-[#475569]/40 hover:text-[#0F1E36] hover:opacity-100 transition-all duration-300"
+              className="w-[140px] flex-shrink-0 flex items-center justify-center text-[#475569]/40 hover:text-[#1B2A3A] hover:opacity-100 transition-all duration-300"
               title={brand.name}
             >
               {brand.svg}

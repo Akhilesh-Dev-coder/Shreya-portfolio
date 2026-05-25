@@ -49,9 +49,9 @@ export default function Work() {
       challenge:
         "The premium housing market in Kolkata was highly saturated with standard definitions of 'luxury'. The Adventz Keventer project required a highly distinct narrative to capture ultra-high-net-worth individuals and position itself not just as real estate, but as an irreplaceable heritage asset.",
       strategy:
-        "We developed a sophisticated communication narrative titled 'Curated Living', focusing on architectural ancestry, absolute privacy, and legacy value. We secured high-level features in Forbes India, Economic Times, and Architectural Digest. Additionally, we bypassed standard display ads in favor of exclusive private salons and customized direct-mail packages for high-net-worth lists.",
+        "I developed a sophisticated communication narrative titled 'Curated Living', focusing on architectural ancestry, absolute privacy, and legacy value. I secured high-level features in Forbes India, Economic Times, and Architectural Digest. Additionally, I bypassed standard display ads in favor of exclusive private salons and customized direct-mail packages for high-net-worth lists.",
       impact:
-        "Our highly targeted communications funnel shifted the project's reputation from standard premium to a coveted private estate. This strategic positioning achieved a massive influx of direct inquiries and solidified Keventer Realty's status as a top-tier luxury developer in Eastern India.",
+        "My highly targeted communications funnel shifted the project's reputation from standard premium to a coveted private estate. This strategic positioning achieved a massive influx of direct inquiries and solidified Keventer Realty's status as a top-tier luxury developer in Eastern India.",
       kpis: [
         { value: "45%", metric: "Increase in HNW Lead Generation" },
         { value: "100%", metric: "Top-Tier Editorial Placements" },
@@ -61,18 +61,18 @@ export default function Work() {
         cardBg: "bg-[#FAF6EE]",
         cardBorder: "border-[#C6A664]/30",
         shadow: "shadow-[0_25px_60px_rgba(198,166,100,0.06)] hover:shadow-[0_35px_80px_rgba(198,166,100,0.15)] hover:border-[#C6A664]/60",
-        categoryText: "text-[#0F1E36]",
-        categoryBg: "bg-[#FFFFFF]",
-        categoryBorder: "border-[#0F1E36]/20",
-        titleText: "text-[#0F1E36] group-hover:text-[#C6A664]",
+        categoryText: "text-[#1B2A3A]",
+        categoryBg: "bg-[#FFFFFC]",
+        categoryBorder: "border-[#1B2A3A]/20",
+        titleText: "text-[#1B2A3A] group-hover:text-[#C6A664]",
         conceptText: "text-[#475569]",
-        buttonBg: "bg-[#0F1E36] hover:bg-[#C6A664] text-[#FFFFFF] hover:text-[#FFFFFF]",
+        buttonBg: "bg-[#1B2A3A] hover:bg-[#C6A664] text-[#FFFFFF] hover:text-[#FFFFFF]",
         buttonIcon: "text-[#FFFFFF]",
-        statLabel: "text-[#0F1E36]",
-        statValue: "text-[#0F1E36]",
+        statLabel: "text-[#1B2A3A]",
+        statValue: "text-[#1B2A3A]",
         kpiLabel: "text-[#475569]",
-        kpiBorder: "border-[#0F1E36]/10",
-        timelineIcon: "text-[#0F1E36]",
+        kpiBorder: "border-[#1B2A3A]/10",
+        timelineIcon: "text-[#1B2A3A]",
         timelineText: "text-[#475569]",
       }
     },
@@ -91,7 +91,7 @@ export default function Work() {
       challenge:
         "Sonata's brand communication was predominantly focused on functional utility rather than brand affinity, leading to stagnant engagement rates among modern millennial and Gen-Z consumers who seek emotional alignment and storytelling.",
       strategy:
-        "We executed a comprehensive communication shift, moving the messaging toward craftsmanship, cultural legacy, and personal identity. We designed a story-driven social media program, developed premium editorial features, and curated influencer-led storytelling campaigns that positioned Sonata as the signature accessory for modern professionals.",
+        "I executed a comprehensive communication shift, moving the messaging toward craftsmanship, cultural legacy, and personal identity. I designed a story-driven social media program, developed premium editorial features, and curated influencer-led storytelling campaigns that positioned Sonata as the signature accessory for modern professionals.",
       impact:
         "By grounding the campaign in human storytelling and modern media channels, the brand formed genuine emotional connections with the new demographic. This digital-first brand positioning resulted in a substantial boost in positive sentiment and established a solid framework for future collections.",
       kpis: [
@@ -100,16 +100,16 @@ export default function Work() {
         { value: "12+", metric: "Major Media Lifestyle Features" },
       ],
       theme: {
-        cardBg: "bg-[#0F1E36]",
-        cardBorder: "border-[#0F1E36]",
-        shadow: "shadow-[0_25px_60px_rgba(15,30,54,0.15)] hover:shadow-[0_35px_80px_rgba(15,30,54,0.28)] hover:border-[#C6A664]/30",
+        cardBg: "bg-[#1B2A3A]",
+        cardBorder: "border-[#1B2A3A]",
+        shadow: "shadow-[0_25px_60px_rgba(27,42,58,0.15)] hover:shadow-[0_35px_80px_rgba(27,42,58,0.28)] hover:border-[#C6A664]/30",
         categoryText: "text-[#FAF8F5]",
-        categoryBg: "bg-[#0F1E36]/60",
+        categoryBg: "bg-[#1B2A3A]/60",
         categoryBorder: "border-[#FAF8F5]/30",
         titleText: "text-[#FFFFFF] group-hover:text-[#C6A664]",
         conceptText: "text-[#E2E8F0]",
-        buttonBg: "bg-[#C6A664] hover:bg-[#FAF8F5] text-[#0F1E36] hover:text-[#0F1E36]",
-        buttonIcon: "text-[#0F1E36]",
+        buttonBg: "bg-[#C6A664] hover:bg-[#FAF8F5] text-[#1B2A3A] hover:text-[#1B2A3A]",
+        buttonIcon: "text-[#1B2A3A]",
         statLabel: "text-[#C6A664]",
         statValue: "text-[#C6A664]",
         kpiLabel: "text-[#E2E8F0]/80",
@@ -124,7 +124,7 @@ export default function Work() {
     <section
       id="work"
       ref={containerRef}
-      className="py-28 md:py-40 bg-[#FAF8F5] relative overflow-hidden px-6 md:px-12 border-b border-[#0F1E36]/10"
+      className="py-28 md:py-40 bg-[#FAF8F5] relative overflow-hidden px-6 md:px-12 border-b border-[#1B2A3A]/10"
     >
       <div className="max-w-7xl mx-auto portfolio-trigger-zone">
         
@@ -133,16 +133,16 @@ export default function Work() {
           <div className="max-w-xl text-center lg:text-left flex flex-col items-center lg:items-start w-full">
             <div className="flex items-center justify-center lg:justify-start gap-2 mb-4 w-full">
               <span className="w-8 h-[1.5px] bg-[#C6A664] hidden lg:inline-block"></span>
-              <span className="text-xs tracking-[0.25em] text-[#0F1E36] uppercase font-extrabold font-sans">
-                Curated Case Studies
+              <span className="text-xs tracking-[0.25em] text-[#1B2A3A] uppercase font-extrabold font-sans">
+                SELECTED WORK
               </span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-serif text-[#111111] font-black leading-tight uppercase text-center lg:text-left">
-              Selected Campaigns
+            <h2 className="text-4xl md:text-6xl font-serif text-[#111111] font-black leading-tight text-center lg:text-left">
+              Selected Work
             </h2>
           </div>
-          <p className="text-sm md:text-base text-[#475569] font-sans font-semibold max-w-sm text-center lg:text-left leading-relaxed mx-auto lg:mx-0">
-            An in-depth review of selected campaigns demonstrating strategic brand positioning, high-authority media coverage, and exceptional market outcomes.
+          <p className="text-base md:text-lg text-[#475569] font-sans font-semibold max-w-md text-center lg:text-left leading-relaxed mx-auto lg:mx-0">
+            Selected campaigns demonstrating my strategic brand positioning, high-authority media coverage, and direct market outcomes.
           </p>
         </div>
 
@@ -172,7 +172,7 @@ export default function Work() {
 
                 <button
                   onClick={() => setActiveProject(project)}
-                  className={`self-center lg:self-start flex items-center gap-2 px-6 py-3.5 text-xs font-sans tracking-[0.2em] uppercase font-extrabold transition-all duration-300 shadow-[0_8px_25px_rgba(15,30,54,0.15)] group/btn mx-auto lg:mx-0 ${project.theme.buttonBg}`}
+                  className={`self-center lg:self-start flex items-center gap-2 px-6 py-3.5 text-xs font-sans tracking-[0.2em] uppercase font-extrabold transition-all duration-300 shadow-[0_8px_25px_rgba(27,42,58,0.15)] group/btn mx-auto lg:mx-0 ${project.theme.buttonBg}`}
                 >
                   EXPLORE CASE BRIEF
                   <ArrowUpRight className={`w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 ${project.theme.buttonIcon}`} />

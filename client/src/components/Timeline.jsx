@@ -74,7 +74,7 @@ export default function Timeline() {
     <section
       id="timeline"
       ref={containerRef}
-      className="py-28 md:py-40 bg-[#FAF8F5] relative overflow-hidden px-6 md:px-12 border-b border-[#0F1E36]/10"
+      className="py-28 md:py-40 bg-[#FAF8F5] relative overflow-hidden px-6 md:px-12 border-b border-[#1B2A3A]/10"
     >
       <div className="max-w-7xl mx-auto">
         
@@ -82,7 +82,7 @@ export default function Timeline() {
         <div className="text-center lg:text-left mx-auto lg:mx-0 flex flex-col items-center lg:items-start mb-20 max-w-2xl">
           <div className="flex items-center justify-center lg:justify-start gap-2 mb-4 w-full">
             <span className="w-8 h-[1.5px] bg-[#C6A664] hidden lg:inline-block"></span>
-            <span className="text-xs tracking-[0.25em] text-[#0F1E36] uppercase font-extrabold font-sans">
+            <span className="text-xs tracking-[0.25em] text-[#1B2A3A] uppercase font-extrabold font-sans">
               Registry Archives
             </span>
           </div>
@@ -99,15 +99,15 @@ export default function Timeline() {
           {milestones.map((node, idx) => (
             <div
               key={idx}
-              className="career-ladder-row flex flex-col lg:grid lg:grid-cols-12 gap-8 lg:gap-16 border-t border-[#0F1E36]/10 pt-16 md:pt-24 first:border-t-0 first:pt-0 items-center lg:items-start"
+              className="career-ladder-row flex flex-col lg:grid lg:grid-cols-12 gap-8 lg:gap-16 border-t border-[#1B2A3A]/10 pt-16 md:pt-24 first:border-t-0 first:pt-0 items-center lg:items-start"
             >
               
               {/* Left Column: Outline Year */}
               <div className="lg:col-span-4 flex items-center lg:items-start justify-center lg:justify-start relative w-full">
-                <span className="text-transparent [-webkit-text-stroke:1.5px_rgba(15,30,54,0.65)] text-6xl md:text-9xl font-serif font-black tracking-tighter leading-none mx-auto lg:mx-0">
+                <span className="text-transparent [-webkit-text-stroke:1.5px_rgba(27,42,58,0.65)] text-6xl md:text-9xl font-serif font-black tracking-tighter leading-none mx-auto lg:mx-0">
                   {node.year}
                 </span>
-                <div className="absolute right-0 top-4 hidden lg:flex items-center gap-1 bg-[#FFFFFF] border border-[#0F1E36]/20 px-3 py-1 text-[9px] font-sans font-extrabold tracking-widest text-[#0F1E36]">
+                <div className="absolute right-0 top-4 hidden lg:flex items-center gap-1 bg-[#FFFFFC] border border-[#1B2A3A]/20 px-3 py-1 text-[9px] font-sans font-extrabold tracking-widest text-[#1B2A3A]">
                   <Briefcase className="w-3 h-3" />
                   <span>RECORDED</span>
                 </div>
@@ -115,11 +115,11 @@ export default function Timeline() {
 
               {/* Right Column: Card Sheet */}
               <div className="lg:col-span-8 w-full">
-                <div className="bg-[#FFFFFF] p-10 md:p-12 border border-[#C6A664]/20 rounded-none shadow-[0_20px_45px_rgba(198,166,100,0.12)] hover:border-[#0F1E36] transition-all duration-300 w-full relative text-center lg:text-left flex flex-col items-center lg:items-start">
+                <div className="bg-[#FFFFFC] p-10 md:p-12 border border-[#C6A664]/20 rounded-none shadow-[0_20px_45px_rgba(198,166,100,0.12)] hover:border-[#1B2A3A] transition-all duration-300 w-full relative text-center lg:text-left flex flex-col items-center lg:items-start">
                   
                   <div className="absolute top-0 right-0 w-8 h-8 border-t border-r border-[#C6A664]/20 pointer-events-none"></div>
 
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#FAF8F5] border border-[#0F1E36]/10 text-xs font-sans font-extrabold text-[#0F1E36] mb-4 mx-auto lg:mx-0">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#FAF8F5] border border-[#1B2A3A]/10 text-xs font-sans font-extrabold text-[#1B2A3A] mb-4 mx-auto lg:mx-0">
                     <Calendar className="w-3.5 h-3.5" />
                     {node.period}
                   </span>
@@ -127,7 +127,7 @@ export default function Timeline() {
                   <h3 className="text-xl md:text-2xl font-serif font-black text-[#111111] mb-1 text-center lg:text-left">
                     {node.role}
                   </h3>
-                  <span className="text-xs text-[#0F1E36] font-sans font-extrabold uppercase tracking-widest block mb-6 text-center lg:text-left">
+                  <span className="text-xs text-[#1B2A3A] font-sans font-extrabold uppercase tracking-widest block mb-6 text-center lg:text-left">
                     {node.company}
                   </span>
 

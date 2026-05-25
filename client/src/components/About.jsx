@@ -32,35 +32,23 @@ export default function About() {
     return () => ctx.revert();
   }, []);
 
-  const qaBlocks = [
-    {
-      num: "01",
-      question: "WHAT IS MY PHILOSOPHY?",
-      answer: "I believe communication is a brand's most critical financial leverage. We do not design narratives to generate passive engagement; we engineer them to build permanent market authority, customer alignment, and absolute commercial trust.",
-    },
-    {
-      num: "02",
-      question: "HOW DO WE POSITION VALUE?",
-      answer: "We bypass saturated marketing parameters. By securing top-tier national media placements, designing integrated digital strategies, and maintaining custom direct-mail executive salons, we position clients as irreplaceable industry leaders.",
-    },
-    {
-      num: "03",
-      question: "WHO DO WE PARTNER WITH?",
-      answer: "We represent select ultra-luxury real estate developers, hospitality groups, watchmakers, and high-level corporate leaders who require bespoke branding execution, persistent advisory, and ironclad reputation networks.",
-    },
+  const aboutParagraphs = [
+    "A communications and marketing professional with experience across PR, media relations, brand communication, digital marketing and client servicing.",
+    "Experienced in developing communication strategies for brands across real estate, hospitality, lifestyle, retail and enterprise sectors.",
+    "Combines strategic thinking, storytelling, campaign management and communication execution to create impactful brand experiences and meaningful audience engagement."
   ];
 
   return (
     <section
       id="about"
       ref={containerRef}
-      className="py-28 md:py-40 bg-[#FAF8F5] relative overflow-hidden px-6 md:px-12 border-b border-[#0F1E36]/10"
+      className="py-28 md:py-40 bg-[#FAF8F5] relative overflow-hidden px-6 md:px-12 border-b border-[#1B2A3A]/10"
     >
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-20 lg:gap-32 items-start">
         
         {/* Left Column: B&W Portrait framed elegantly */}
         <div className="lg:col-span-5 relative flex justify-center lg:sticky lg:top-32">
-          <div className="relative w-full max-w-sm p-3 bg-[#FFFFFF] border border-[#0F1E36]/10 shadow-[0_25px_60px_rgba(198,166,100,0.18)]">
+          <div className="relative w-full max-w-sm p-3 bg-[#FFFFFC] border border-[#1B2A3A]/10 shadow-[0_25px_60px_rgba(198,166,100,0.18)]">
             <div className="relative overflow-hidden aspect-[3/4] bg-[#FAF8F5]">
               <img
                 ref={imageRef}
@@ -70,57 +58,58 @@ export default function About() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#FAF8F5]/30 via-transparent to-transparent pointer-events-none"></div>
             </div>
-            <div className="absolute bottom-6 right-6 px-3 py-1 bg-[#0F1E36] text-[#FAF8F5] text-[9px] font-sans font-extrabold tracking-widest uppercase">
-              EXECUTIVE PORTFOLIO
+            <div className="absolute bottom-6 right-6 px-3 py-1 bg-[#1B2A3A] text-[#FAF8F5] text-[9px] font-sans font-extrabold tracking-widest uppercase">
+              PORTFOLIO PROFILE
             </div>
           </div>
         </div>
 
-        {/* Right Column: Q&A Interview Stack */}
+        {/* Right Column: Editorial narrative & highlight */}
         <div className="lg:col-span-7 flex flex-col text-center lg:text-left items-center lg:items-start">
           <div className="flex items-center justify-center lg:justify-start gap-2 mb-4 w-full">
             <span className="w-8 h-[1.5px] bg-[#C6A664] hidden lg:inline-block"></span>
-            <span className="text-xs tracking-[0.25em] text-[#0F1E36] uppercase font-extrabold font-sans">
-              Strategic Q&amp;A
+            <span className="text-xs tracking-[0.25em] text-[#1B2A3A] uppercase font-extrabold font-sans">
+              MY BACKGROUND
             </span>
           </div>
 
-          <h2 className="text-3xl md:text-5xl font-serif text-[#111111] font-black mb-12 leading-tight text-center lg:text-left">
-            An Asymmetrical Breakdown of Brand Power.
+          <h2 className="text-4xl md:text-6xl font-serif text-[#111111] font-black mb-10 leading-tight text-center lg:text-left">
+            About
           </h2>
 
-          {/* Q&A Items */}
-          <div className="space-y-14 mb-16 w-full">
-            {qaBlocks.map((block, idx) => (
-              <div key={idx} className="border-b border-[#0F1E36]/10 pb-10 last:border-b-0 last:pb-0 text-center lg:text-left">
-                <div className="flex flex-col items-center lg:items-start lg:flex-row gap-4 lg:gap-6">
-                  <span className="text-xs font-sans font-extrabold text-[#0F1E36] tracking-widest leading-none mt-1.5 mx-auto lg:mx-0">
-                    {block.num}
-                  </span>
-                  <div className="flex flex-col text-center lg:text-left items-center lg:items-start">
-                    <h3 className="text-lg md:text-xl font-serif font-black text-[#111111] mb-3 text-center lg:text-left">
-                      {block.question}
-                    </h3>
-                    <p className="text-sm md:text-base text-[#475569] font-sans font-semibold leading-relaxed max-w-xl text-center lg:text-left mx-auto lg:mx-0">
-                      {block.answer}
-                    </p>
-                  </div>
-                </div>
-              </div>
+          {/* Highlight Callout Statement (Option 2) */}
+          <div className="w-full bg-[#F4EFE6] border-l-4 border-l-[#C6A664] p-8 md:p-10 mb-12 text-left relative overflow-hidden shadow-xs">
+            <span className="text-[10px] tracking-[0.25em] text-[#1B2A3A] uppercase font-extrabold block mb-3">
+              My Approach
+            </span>
+            <blockquote className="font-serif text-xl md:text-2xl font-black text-[#111111] leading-relaxed italic">
+              “Strategic communication backed by creativity and execution.”
+            </blockquote>
+          </div>
+
+          {/* About Paragraphs */}
+          <div className="space-y-8 mb-16 w-full text-center lg:text-left">
+            {aboutParagraphs.map((paragraph, idx) => (
+              <p 
+                key={idx} 
+                className="text-base md:text-lg text-[#475569] font-sans font-semibold leading-relaxed max-w-2xl text-center lg:text-left mx-auto lg:mx-0"
+              >
+                {paragraph}
+              </p>
             ))}
           </div>
 
           {/* Spacious Metrics strip */}
-          <div className="grid grid-cols-3 gap-6 border-t border-[#0F1E36]/15 pt-12 w-full">
+          <div className="grid grid-cols-3 gap-6 border-t border-[#1B2A3A]/15 pt-12 w-full">
             {[
-              { icon: <Award className="w-5 h-5 text-[#C6A664]" />, val: "10+ Years", label: "Strategic Tenure" },
-              { icon: <Users className="w-5 h-5 text-[#C6A664]" />, val: "50+ Brands", label: "Advisory Success" },
-              { icon: <Star className="w-5 h-5 text-[#C6A664]" />, val: "99% Rate", label: "PR Placement" },
+              { icon: <Award className="w-5 h-5 text-[#C6A664]" />, val: "10+ Years", label: "Tenure in PR" },
+              { icon: <Users className="w-5 h-5 text-[#C6A664]" />, val: "50+ Brands", label: "Brands Advised" },
+              { icon: <Star className="w-5 h-5 text-[#C6A664]" />, val: "99% Rate", label: "Placement Rate" },
             ].map((metric, idx) => (
               <div key={idx} className="flex flex-col items-center lg:items-start text-center lg:text-left">
                 <div className="flex items-center justify-center lg:justify-start gap-2 mb-2 text-[#C6A664]">
                   {metric.icon}
-                  <span className="text-[10px] font-sans font-extrabold tracking-widest uppercase text-[#0F1E36] hidden sm:inline">
+                  <span className="text-[10px] font-sans font-extrabold tracking-widest uppercase text-[#1B2A3A] hidden sm:inline">
                     {metric.label.split(" ")[0]}
                   </span>
                 </div>

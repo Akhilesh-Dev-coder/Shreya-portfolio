@@ -3,17 +3,21 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-cream: #FAF8F5; /* Warm, spacious editorial cream canvas */
-  --color-primary-white: #FFFFFF; /* Pure clean backing */
+  /* Primary Colours */
+  --color-primary-cream: #FAF8F5; /* Soft Cream */
+  --color-primary-beige: #F4EFE6; /* Warm Beige */
+  --color-primary-white: #FFFFFC; /* Ivory White */
   
-  --color-accent-navy: #0F1E36; /* Deep, dark luxury Navy Blue */
-  --color-accent-gold: #C6A664; /* Sophisticated champagne gold */
+  /* Secondary Colours */
+  --color-secondary-charcoal: #111111; /* Charcoal */
+  --color-secondary-navy: #1B2A3A; /* Muted Navy */
+  --color-secondary-olive: #3C4A3E; /* Deep Olive */
   
-  --color-text-charcoal: #111111; /* Deep charcoal for absolute readability */
-  --color-text-slate: #475569; /* Soft grey-blue for descriptions */
-  --color-text-muted: #94A3B8; /* Muted label slate */
+  /* Accent Colours */
+  --color-accent-gold: #C6A664; /* Muted Gold */
+  --color-accent-bronze: #8E7544; /* Bronze */
   
-  --color-border-line: rgba(15, 30, 54, 0.08); /* Delicate navy-cream dividers */
+  --color-border-line: rgba(27, 42, 58, 0.08); /* Delicate navy-cream dividers */
   --color-border-accent: rgba(198, 166, 100, 0.25); /* Elegant gold lines */
 
   --font-serif: "Playfair Display", Georgia, serif;
